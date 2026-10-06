@@ -1,0 +1,113 @@
+/* ---- Tokens ---------------------------------------------------------------- */
+:root {
+  --bg: #f8f5ef;
+  --paper: #ffffff;
+  --paper-2: #f2eee6;
+  --line: #e6e0d4;
+  --ink: #1f2420;
+  --ink-2: #5d645e;
+  --ink-3: #8d938c;
+
+  --green: #14532d;
+  --green-600: #0f4224;
+  --green-50: #e7f2ea;
+  --orange: #ff7a45;
+  --orange-50: #fff0e8;
+  --red: #c53030;
+  --red-50: #fdecec;
+  --amber: #a35a00;
+  --amber-50: #fff4dd;
+  --blue: #1d5fc4;
+  --blue-50: #e9f1fd;
+
+  --radius: 18px;
+  --radius-sm: 11px;
+  --shadow: 0 1px 0 rgba(31, 36, 32, 0.04), 0 8px 24px -12px rgba(31, 36, 32, 0.18);
+  --font: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+/* One colour per club category; components read --c / --c-soft. */
+.cat-technical { --c: #2f6fdb; --c-soft: #e8f0fd; }
+.cat-cultural { --c: #d6336c; --c-soft: #fdeaf1; }
+.cat-sports { --c: #1f9254; --c-soft: #e5f5ec; }
+.cat-literary { --c: #c77700; --c-soft: #fff3df; }
+.cat-arts { --c: #7048e8; --c-soft: #f0ebfe; }
+.cat-social-service { --c: #0b8a9a; --c-soft: #e2f5f7; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+h1 {
+  font-family: var(--display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h2 {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+p {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--orange) 55%, transparent);
+  outline-offset: 2px;
+}
+.muted {
+  color: var(--ink-2);
+}
+.small {
+  font-size: 0.84rem;
+}
+.right {
+  text-align: right;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+.self-start {
+  align-self: flex-start;
+}
