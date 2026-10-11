@@ -3,6 +3,27 @@
 A full-stack web app for college clubs. Students discover clubs, apply to join, and register for club events.
 Coordinators review applications and run their clubs. Admins create clubs and manage the portal.
 
+
+## 🌐 Live demo
+
+| | Link |
+|---|---|
+| **Website** | https://club-registration-portal.vercel.app |
+| **Backend API** | https://club-portal-api.onrender.com/api/health |
+
+Demo logins:
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | admin@college.edu | Admin@123 |
+| Coordinator | arjun.coord@college.edu | Coord@123 |
+| Student | student@college.edu | Student@123 |
+
+> The backend runs on Render's free plan. It sleeps after 15 minutes of no use, so the first login can take about a minute.
+> Demo data resets whenever the backend restarts.
+
+
+
 | Layer    | Tech |
 |----------|------|
 | Frontend | React 19 (Vite), React Router, Axios, **plain CSS** |
